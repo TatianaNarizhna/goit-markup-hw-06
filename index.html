@@ -470,7 +470,7 @@
             </ul>
           </div>
 
-          <div>
+          <div class="join">
             <p class="footer-join">присоединяйтесь</p>
             <ul class="join-list">
               <li class="join-margin">
@@ -506,18 +506,23 @@
             </ul>
           </div>
 
-          <form>
+          <form class="mailing-main">
+            <b class="mailing">Подпишитесь на рассылку</b>
             <div class="mailing-flex">
-              <b class="mailing">Подпишитесь на рассылку</b>
               <input
                 type="email"
                 name="email"
                 placeholder="E-mail"
                 class="mailing-form"
               />
-            </div>
 
-            <button type="submit">Подписаться</button>
+              <button type="submit" class="button-mailing">
+                Подписаться
+                <svg class="icon-mailing" width="24" height="24">
+                  <use href="./svgoptimized/sprite.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
