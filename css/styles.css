@@ -444,11 +444,18 @@ textarea {
   color: var(--accent-color);
   text-decoration: underline;
   margin-left: 5px;
+  cursor: pointer;
 }
 
 .checkbox {
-  appearance: none;
   position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .check-mark::before {
@@ -462,9 +469,10 @@ textarea {
 
   background-color: var(--white-hero-color);
 
-  transition-property: background-color, border-color;
-  transition-duration: 250ms, 250ms;
-  transition-timing-function: var(--timing-function), var(--timing-function);
+  transition-property: background-color, border-color, border;
+  transition-duration: 250ms, 250ms, 250ms;
+  transition-timing-function: var(--timing-function), var(--timing-function),
+    var(--timing-function);
 }
 
 .checkbox:checked + .check-mark::before {
@@ -478,6 +486,11 @@ textarea {
 .check-mark {
   display: flex;
   align-items: center;
+}
+
+.check-mark:hover::before,
+.check-mark:focus::before {
+  border: 2px solid var(--accent-color);
 }
 
 /* main container for all project */
