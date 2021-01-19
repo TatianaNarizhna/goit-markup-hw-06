@@ -259,7 +259,7 @@ a {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transition-property: tranform;
+  transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
 }
