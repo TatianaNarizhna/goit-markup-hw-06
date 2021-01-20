@@ -144,7 +144,9 @@
                   alt="набор разметки"
                   width="370"
                 />
-                <h3 class="project-skills">Десктопные приложения</h3>
+                <div class="thumb-skills">
+                  <h3 class="project-skills">Десктопные приложения</h3>
+                </div>
               </div>
             </li>
             <li class="skills-img">
@@ -154,7 +156,9 @@
                   alt="оплата услуг через приложение"
                   width="370"
                 />
-                <h3 class="project-skills">Мобильные приложения</h3>
+                <div class="thumb-skills">
+                  <h3 class="project-skills">Мобильные приложения</h3>
+                </div>
               </div>
             </li>
             <li class="skills-img">
@@ -164,7 +168,9 @@
                   alt="практика с помощью планшета"
                   width="370"
                 />
-                <h3 class="project-skills">Дизайнерские решения</h3>
+                <div class="thumb-skills">
+                  <h3 class="project-skills">Дизайнерские решения</h3>
+                </div>
               </div>
             </li>
           </ul>
@@ -536,26 +542,37 @@
           <form class="modal-form">
             <div class="field-form">
               <label for="name">Имя</label>
-              <input type="text" name="text" id="name" class="border-form" />
-              <svg class="name-form" width="12" height="12">
-                <use href="./svgoptimized/sprite.svg#icon-name-form"></use>
-              </svg>
+              <div class="position-form">
+                <input type="text" name="text" id="name" class="border-form" />
+                <svg class="name-form" width="12" height="12">
+                  <use href="./svgoptimized/sprite.svg#icon-name-form"></use>
+                </svg>
+              </div>
             </div>
 
             <div class="field-form">
               <label for="tel">Телефон</label>
-              <svg class="name-form" width="13" height="13">
-                <use href="./svgoptimized/sprite.svg#icon-phone-form"></use>
-              </svg>
-              <input type="tel" name="tel" id="tel" class="border-form" />
+              <div class="position-form">
+                <svg class="name-form" width="13" height="13">
+                  <use href="./svgoptimized/sprite.svg#icon-phone-form"></use>
+                </svg>
+                <input type="tel" name="tel" id="tel" class="border-form" />
+              </div>
             </div>
 
             <div class="field-form">
               <label for="email">Почта</label>
-              <svg class="name-form" width="15" height="12">
-                <use href="./svgoptimized/sprite.svg#icon-mail-form"></use>
-              </svg>
-              <input type="email" name="email" id="email" class="border-form" />
+              <div class="position-form">
+                <svg class="name-form" width="15" height="12">
+                  <use href="./svgoptimized/sprite.svg#icon-mail-form"></use>
+                </svg>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="border-form"
+                />
+              </div>
             </div>
 
             <div class="field-form">
