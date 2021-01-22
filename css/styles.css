@@ -334,7 +334,6 @@ a {
 
 .position-form {
   position: relative;
-  display: block;
   width: 100%;
 }
 
@@ -465,6 +464,10 @@ textarea {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+.agreement-box label {
+  color: var(--secondary-text-color);
 }
 
 .check-mark::before {
